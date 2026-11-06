@@ -1,0 +1,89 @@
+<html>
+    <body>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Totally Real Link</title>
+    <style>
+        /* The container to center our joke button */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0b0c10; /* Dark background makes the glitch pop */
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* The Glitch Button */
+        .glitch-btn {
+            position: relative;
+            display: inline-block;
+            padding: 20px 40px;
+            background-color: #dc3545; /* Warning Red */
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Arial Black', Impact, sans-serif;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 0 20px rgba(220, 53, 69, 0.6);
+            
+            /* Loops the glitch shake and the flashing lights infinitely */
+            animation: shake 0.3s infinite, flash 1.5s infinite;
+        }
+
+        /* 1. The Shaking/Vibrating Effect */
+        @keyframes shake {
+            0% { transform: translate(0, 0) skew(0deg); }
+            20% { transform: translate(-3px, 2px) skew(-2deg); }
+            40% { transform: translate(3px, -1px) skew(3deg); }
+            60% { transform: translate(-2px, -2px) skew(-1deg); }
+            80% { transform: translate(2px, 2px) skew(2deg); }
+            100% { transform: translate(0, 0) skew(0deg); }
+        }
+
+        /* 2. The Flashing Color Glitch Effect */
+        @keyframes flash {
+            0%, 100% { 
+                background-color: #dc3545; 
+                text-shadow: 3px 3px #00ffff;
+                border-color: #ffffff;
+            }
+            33% { 
+                background-color: #00ffcc; 
+                color: #000;
+                text-shadow: -3px -3px #ff00ff;
+                border-color: #ff00ff;
+            }
+            66% { 
+                background-color: #ff00ff; 
+                color: #fff;
+                text-shadow: 4px -2px #00ffcc;
+                border-color: #00ffcc;
+            }
+        }
+
+        /* Shrinks down when physically clicked */
+        .glitch-btn:active {
+            transform: scale(0.95);
+            animation: none; /* Stops shaking temporarily while holding click */
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This links directly to your second file inside the same folder -->
+    0
+<a href="gabi.jpg" class="glitch-btn">
+    
+        🚨ꏸ꒒ꋫꂑꁒ ꄘ꒓ꍟꍟ ꁒꆂꁹꍟꐟ 🚨       
+    </a>
+
+    <audio src="“Fahh” - meme sound effect - Sound effects.mp3"></audio>
